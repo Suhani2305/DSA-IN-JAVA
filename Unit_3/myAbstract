@@ -1,0 +1,41 @@
+
+package Unit_3;
+
+// Abstract class Animal
+abstract class Animal {
+    abstract void sound(); // Abstract method
+
+    // Concrete method
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+// DogClass extends Animal
+class DogClass extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+// CatClass extends Animal
+class CatClass extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+// Main class AbstractInterfaces
+public class MyAbstract {
+    public static void main(String[] args) {
+        Animal dog = new DogClass();
+        dog.sound(); // Output: Dog barks
+        dog.eat();   // Output: Animal is eating
+
+        Animal cat = new CatClass();
+        cat.sound(); // Output: Cat meows
+        cat.eat();   // Output: Animal is eating
+    }
+}

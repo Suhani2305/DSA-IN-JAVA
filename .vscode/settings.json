@@ -1,0 +1,10 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.project.importOnFirstTimeStartup": "disabled",
+    "java.generateBuildConfig": false,
+    "java.completion.enabled": true,
+    "java.completion.guessMethodArguments": false
+
+}
